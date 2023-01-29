@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -50,7 +51,7 @@
             </div>
                 <div class="inv-options">
                     <div class="inv-options-list">
-                        <img class="brand-logo" src="./images/lj-symbol.svg"></img>
+                        <!--<img class="brand-logo" src="./images/lj-symbol.svg"></img>-->
                         <div class="inv-option-item color-picker-container">
                           <label for="favcolor">Color:</label>
                           <input type="color" id="favcolor" name="favcolor" value="#ff0000">
@@ -59,7 +60,7 @@
                         pattern="[0-9]" onfocus="this.value=''" placeholder="" oninput="validity.valid||(value='');"></input>
                         <div class="inv-option-item" id="item-use"><p>Use</p></div>
                         <!-- <img class="inv-option-hand" id= "item-use" src="images/hand-1.png"> -->
-                        <div class="inv-option-item" id="item-give"><p>Give</p></div>
+                        <!-- <div class="inv-option-item" id="item-give"><p>Give</p></div> -->
                         <div class="inv-option-item" id="inv-close"><p>Close</p></div>
                         <div class="combine-option-container">
                             <div class="btn-combine CombineItem"><p>Combine</p></div>
@@ -89,8 +90,8 @@
             </div>
             <div id="inventory-menus" style="min-height: 100vh;">
                 <div class="row justify-center">
-                  <q-btn style="top: 20vh; margin-right: 1vh;" icon="settings_suggest" color="button" @click="options = true"></q-btn>
-                  <q-btn style="top: 20vh;" icon="help" color="button" @click="help = true"></q-btn>
+                  <q-btn style="top: 70vh; margin-right: 1vh;" icon="settings_suggest" color="button" @click="options = true"></q-btn>
+                  <q-btn style="top: 70vh;" icon="help" color="button" @click="help = true"></q-btn>
                   <q-dialog v-model="options">
                     <q-card>
                       <q-card-section>
